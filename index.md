@@ -1,5 +1,7 @@
 
 *Text text text* <br />
+[Lab Report 1](lab-report-1-week-2.html)
+
 # Text text text <br />
 ## Text text text <br />
 **Texxxxt**	 <br />
