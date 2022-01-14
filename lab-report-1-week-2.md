@@ -73,7 +73,77 @@ For example, we will copy *sampleTutorial.txt*:
 <br />
 <br />
 
-**Setting an SSH Key**
+**Setting an SSH Key**<br />
+We will set up a SSH key so we don't have to type our password every time we log in or run the `scp` command.
+
+On your computer (steps taken from https://ucsd-cse15l-w22.github.io/week/week1/):
+```
+# on client (your computer)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/joe/.ssh/id_rsa): /Users/joe/.ssh/id_rsa
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/joe/.ssh/id_rsa.
+Your public key has been saved in /Users/joe/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 joe@Joes-Mac-mini.local
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+|       . . + .   |
+|      . . B o .  |
+|     . . B * +.. |
+|      o S = *.B. |
+|       = = O.*.*+|
+|        + * *.BE+|
+|           +.+.o |
+|             ..  |
++----[SHA256]-----+
+```
+
+*Extra steps for windows users only: https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation*
+
+Now we need to copy the public key to the .ssh directory of your user account on the server.
+
+```
+$ ssh cs15lwi22zz@ieng6.ucsd.edu
+<Enter Password>
+# now on server
+$ mkdir .ssh
+$ <logout>
+# back on client
+$ scp /Users/joe/.ssh/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
+# You use your username and the path you saw in the command above
+```
+You are now done setting up the keys and can log in or use other commands without having to input your password.
+
+<br/>
+
+![Image](loggedIn.png)
+>After following the previous steps, you can now log in without inputing the password!
+
+<br/>
+
+
+**Optimizing Remote Running**<br/><br/>
+Lastly, here are some other useful tips to save time:
+* You can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit.<br/>
+`$ ssh cs15lwi22@ieng6.ucsd.edu "command"`
+* You can use semicolons to run multiple commands on the same line in most terminals.<br/>
+`$ command1; command2; command3`
+
+For example, listing the home directory  of the remote server using the first tip:
+
+![Image](lsExample.png)
+
+This ends the tutorial, thank you for reading!
+
+
+
+
+
+
 
 
 
