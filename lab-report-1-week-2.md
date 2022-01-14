@@ -35,9 +35,9 @@ Now that you are logged in, you can try running some commands. Here are some for
 * **cd**: change directory to the home directory
 * **ls**: lists the files in the current directory
 * **ls -a**: lists ALL files in the current directory (files starting with ".")
-* **mkdir <name_of_directory>**: creates a directory
+* **mkdir *name_of_directory***: creates a directory
 * **pwd**:  prints the path of the current directory
-* **cp <Source_file> <Destination_file>**: copies the contents of source file into destination file.
+* **cp *Source_file* *Destination_file***: copies the contents of source file into destination file.
 
 For example, running the `ls -a` and `ls` commands:
 
@@ -128,7 +128,7 @@ You are now done setting up the keys and can log in or use other commands withou
 
 **Optimizing Remote Running**<br/><br/>
 Lastly, here are some other useful tips to save time:
-* You can write a command in quotes at the end of an ssh command to directly run it on the remote server, then exit.<br/>
+* You can write a command in quotes at the end of a ssh command to directly run it on the remote server, then exit.<br/>
 `$ ssh cs15lwi22@ieng6.ucsd.edu "command"`
 * You can use semicolons to run multiple commands on the same line in most terminals.<br/>
 `$ command1; command2; command3`
