@@ -7,7 +7,7 @@
 
 **Downloading and installing VSCode** <br />
 <br />
-The first step is to download and install VSCode. Go to https://code.visualstudio.com/download and choose the version that is compatible with your machine. Then follow the instructions to install.
+The first step is to download and install VSCode. Go to [the VSCode website](https://code.visualstudio.com/download) and choose the version that is compatible with your machine. Then follow the instructions to install.
 
 ![Image](vscode.png) <br />
 
@@ -16,7 +16,7 @@ The first step is to download and install VSCode. Go to https://code.visualstudi
 <br />
 *First step for Windows users only: install a program called OpenSSH.* <br />
  <br />
-1. After installing VSCode, go to https://sdacs.ucsd.edu/~icc/index.php and look up your CSE15L course-specific account.
+1. After installing VSCode, go to [this site](https://sdacs.ucsd.edu/~icc/index.php)  and look up your CSE15L course-specific account.
 
 2. Open a terminal in VSCode and input this command (with the *zz* replaced by the letters in your account) :
 
@@ -76,7 +76,7 @@ For example, we will copy *sampleTutorial.txt*:
 **Setting an SSH Key**<br />
 We will set up a SSH key so we don't have to type our password every time we log in or run the `scp` command.
 
-On your computer (steps taken from https://ucsd-cse15l-w22.github.io/week/week1/):
+On your computer (steps taken from  [the CSE15L website](https://ucsd-cse15l-w22.github.io/week/week1/)):
 ```
 # on client (your computer)
 $ ssh-keygen
@@ -102,7 +102,8 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-*Extra steps for windows users only: https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation*
+*Extra steps for windows users to follow 
+[on this website](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation*)
 
 Now we need to copy the public key to the .ssh directory of your user account on the server.
 
@@ -136,6 +137,8 @@ Lastly, here are some other useful tips to save time:
 For example, listing the home directory  of the remote server using the first tip:
 
 ![Image](lsExample.png)
+
+We had to input around 30 keystrokes and the whole process took less amount of time than before, when we had to login, input the password, run a command and then logout, which may add an extra 10-20 keystrokes, depending on the password.
 
 This ends the tutorial, thank you for reading!
 
