@@ -9,7 +9,7 @@
 <br />
 The first step is to download and install VSCode. Go to [the VSCode website](https://code.visualstudio.com/download) and choose the version that is compatible with your machine. Then follow the instructions to install.
 
-![Image](vscode.png) <br />
+![Image](/lab1Images/vscode.png) <br />
 
 
 **Remotely Connecting** <br />
@@ -25,7 +25,7 @@ The first step is to download and install VSCode. Go to [the VSCode website](htt
 
 4. Once you are logged in, you should see something like this:
 
-![Image](terminal1.png) <br />
+![Image](/lab1Images/terminal1.png) <br />
 <br />
 
 **Sample commands** <br />
@@ -41,7 +41,7 @@ Now that you are logged in, you can try running some commands. Here are some for
 
 For example, running the `ls -a` and `ls` commands:
 
-![Image](ls.png)
+![Image](/lab1Images/ls.png)
 >Note that `ls` lists less files than `ls -a `
 
 <br />
@@ -57,17 +57,17 @@ Replacing *FileName.extension* with the desired file name and *zz* with your acc
 
 For example, we will copy *sampleTutorial.txt*:
 
-![Image](beforeCopy.png)
+![Image](/lab1Images/beforeCopy.png)
 >Listing the files before copying *sampleTutorial.txt*
 
 <br />
 
-![Image](copyCommand.png)
+![Image](/lab1Images/copyCommand.png)
 >This is how the command looks in this particular example
 
 <br />
 
-![Image](afterCopy.png)
+![Image](/lab1Images/afterCopy.png)
 >After copying. We can see that *sampleTutorial.txt* is now listed
 
 <br />
@@ -121,7 +121,7 @@ You are now done setting up the keys and can log in or use other commands withou
 
 <br/>
 
-![Image](loggedIn.png)
+![Image](/lab1Images/loggedIn.png)
 >After following the previous steps, you can now log in without inputing the password!
 
 <br/>
@@ -136,7 +136,7 @@ Lastly, here are some other useful tips to save time:
 
 For example, listing the home directory  of the remote server using the first tip:
 
-![Image](lsExample.png)
+![Image](/lab1Images/lsExample.png)
 
 We had to input around 30 keystrokes and the whole process took less amount of time than before, when we had to login, input the password, run a command and then logout, which may add an extra 10-20 keystrokes, depending on the password.
 
