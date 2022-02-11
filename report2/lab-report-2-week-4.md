@@ -1,4 +1,5 @@
 # Lab Report 2 <br />
+[Return to index](../index.md)
 
 ## Change 1 <br />
 <br />

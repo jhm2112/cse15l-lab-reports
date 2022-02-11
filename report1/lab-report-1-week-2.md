@@ -1,5 +1,6 @@
 
 # Lab Report 1 <br />
+[Return to index](../index.md)
 ## Logging into an ieng6  account <br />
 <br />
 
