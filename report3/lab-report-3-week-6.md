@@ -11,7 +11,7 @@
 **Log-in process using the new alias:**
 
 ![Image](../lab3Images/loginDemo.png) <br />
->Now that we have an alias, logging into ieng6 takes considerably less time than before
+>Now that we have an alias, logging into ieng6 takes considerably less time than before.
 
 **Demo of the scp command using the new alias:**
 
