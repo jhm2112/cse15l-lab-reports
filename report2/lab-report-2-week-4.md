@@ -31,17 +31,19 @@ In this case, the bug is that the the program attempts to access an index of -1,
 
 ## Change 3 <br />
 <br />
-For the 3rd test case, my team decided to create an empty file. The output was correct, so no changes were necessary, and we moved on to JUnit testing.
+
 
 <br />
 
-![Image](../lab2Images/code3.png) <br />
-[Link to the (empty) test file 
-](https://github.com/mlin1026/markdown-parse/blob/7fbed91e3a3285a6b270969212f3b59153a1e4d3/breaking-test_3.md)
+![Image](../lab2Images/code4.png) <br />
+[Link to the test file  that caused the error
+](https://github.com/jhm2112/markdown-parse/blob/main/breaking-test_4.md)
 
-The output when testing the program:
+The output when testing the program before fixing the bug:
 
-![Image](../lab2Images/error3.png) <br />
+![Image](../lab2Images/error4.png) <br />
+
+In this case, the bug is that we have not defined the case in which we have image files inserted, which we don't want to include in the output, and the symptom is that the program prints out the image file names when we have them in the program tests.
 
 
 
